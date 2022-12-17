@@ -101,6 +101,7 @@ web3 = new Web3(App.web3Provider);
     $(document).on('click', '.btn-adopt', App.handleAdopt);
     $(document).on('click', '.btn-sell', App.handleSell);
     $(document).on('click', '#Premium', App.purchasePremium);
+    $(document).on('click', '.add-friend-button', App.handleAddfriend);
   },
 
   // update view
@@ -277,6 +278,18 @@ web3 = new Web3(App.web3Provider);
   },
 
   // ------------------------------------------- for friends function--------------------------------------------------------------
+  handleAddfriend:function(event){
+    event.preventDefault();
+    var name = document.getElementById("friend-name").value;
+    var address = document.getElementById("friend-address").value;
+    if (web3.isAddress(address)){
+      return App.addFriend(name, address);
+    }
+    else {
+      window.alert(`${address} is not a vaild address!`);
+    }
+  },
+  
   addFriend: function(name, address){
     web3.eth.getAccounts(function(error, accounts) {
       if (error) {
