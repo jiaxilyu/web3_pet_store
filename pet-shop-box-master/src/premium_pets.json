@@ -1,0 +1,50 @@
+[
+    {
+      "id": 16,
+      "name": "Lucky",
+      "picture": "images/scottish-terrier.jpeg",
+      "age": 3,
+      "breed": "Scottish Terrier",
+      "location": "Lisco, Alabama"
+    },
+    {
+      "id": 17,
+      "name": "GG",
+      "picture": "images/scottish-terrier.jpeg",
+      "age": 3,
+      "breed": "Scottish Terrier",
+      "location": "Tooleville, West Virginia"
+    },
+    {
+      "id": 18,
+      "name": "CJ",
+      "picture": "images/french-bulldog.jpeg",
+      "age": 2,
+      "breed": "French Bulldog",
+      "location": "Freeburn, Idaho"
+    },
+    {
+      "id": 19,
+      "name": "MK",
+      "picture": "images/boxer.jpeg",
+      "age": 2,
+      "breed": "Boxer",
+      "location": "Camas, Pennsylvania"
+    },
+    {
+      "id": 20,
+      "name": "Jeanine",
+      "picture": "images/french-bulldog.jpeg",
+      "age": 2,
+      "breed": "French Bulldog",
+      "location": "Gerber, South Dakota"
+    },
+    {
+      "id": 21,
+      "name": "Elvia",
+      "picture": "images/french-bulldog.jpeg",
+      "age": 3,
+      "breed": "French Bulldog",
+      "location": "Innsbrook, Illinois"
+    }
+  ]
