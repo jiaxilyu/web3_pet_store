@@ -102,6 +102,7 @@ web3 = new Web3(App.web3Provider);
     $(document).on('click', '.btn-sell', App.handleSell);
     $(document).on('click', '#Premium', App.purchasePremium);
     $(document).on('click', '.add-friend-button', App.handleAddfriend);
+    $(document).on('click', '#showFriends', App.handleShowfriend);
   },
 
   // update view
@@ -110,6 +111,7 @@ web3 = new Web3(App.web3Provider);
     try{
       App.markAdopted();
       App.markSelled();
+      App.UpdateFriendsView();
     }
     catch(err){
       console.log(err);
@@ -301,31 +303,53 @@ web3 = new Web3(App.web3Provider);
         friendsInstance = instance;
         return friendsInstance.add_friend(address, name, {from: account});
       }).then(function(result){
-        App.UpdateFriendsView();
+        // App.UpdateFriendsView();
       }).catch(function(err){
         console.log(err);
       });
     });
   },
 
+  handleShowfriend: function(){
+    var val = parseInt(document.getElementById("showFriends").value);
+    val += 1;
+    document.getElementById("showFriends").value = val;
+    App.updatedView();
+  },
+
   UpdateFriendsView: function(){
     var friends_names;
     var friends_addresses;
     var amount;
-    App.contracts.Friends.deployed().then(function(instance) {
-      friendsInstance = instance;
-      return friendsInstance.getFriends();
-    }).then(function(result){
-      friends_addresses = result[0];
-      friends_names = result[1];
-      amount = parseInt(result[2]);
-      // console.log(web3.toAscii(result[1][0]));
-      for(i=0; i < amount;i++){
-        console.log(friends_addresses[i], web3.toAscii(friends_names[i]));
-      }
-    }).catch(function(err){
-      console.log(err);
-    });
+    // check whether fold or expand friend list
+    var val = parseInt(document.getElementById("showFriends").value);
+    // val += 1;
+    // document.getElementById("showFriends").value = val;
+    // expand
+    if (val % 2 === 1){
+      App.contracts.Friends.deployed().then(function(instance) {
+        friendsInstance = instance;
+        return friendsInstance.getFriends();
+      }).then(function(result){
+        friends_addresses = result[0];
+        friends_names = result[1];
+        amount = parseInt(result[2]);
+        var friendCol = $('#friendsList');
+        var friendTemplate = $('#friendsTemplate');
+        for(i=0; i < amount;i++){
+          friendTemplate.find(".name").text("name: "+web3.toAscii(friends_names[i]));
+          friendTemplate.find(".address").text("address: "+friends_addresses[i]);
+          friendCol.append(friendTemplate.html());
+          // console.log(friends_addresses[i], web3.toAscii(friends_names[i]));
+        }
+      }).catch(function(err){
+        console.log(err);
+      });
+    }
+    else {
+      var friendCol = $('#friendsList');
+      friendCol.empty();
+    }
   }
 };
 

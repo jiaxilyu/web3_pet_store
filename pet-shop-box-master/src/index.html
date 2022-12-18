@@ -28,10 +28,37 @@
           <br/>
         </div>
       </div>
-
-      <div id="petsRow" class="row">
+      <div class="friend_container">
+        <button id="showFriends" value=0 style="float:right;width:30%">my friends</button><br></br>
+        <div id="friendsList" class="column" style="float:right;width:30%;"></div>
+      </div>
+      <div id="petsRow" class="row" style="width:70%;">
         <!-- PETS LOAD HERE -->
       </div>
+    </div>
+    <!-- edit friends front end template here-->
+    <div id="friendsTemplate" style="display: none;width:30%;">
+      <style>
+        .friend_wrap{
+          outline: double black;
+        }
+  
+        .heading{
+          background-color:#ccc;
+        }
+        
+        .body{
+          background-color:#aaa;
+        }
+      </style>
+      <div class="friend_wrap"></div>
+        <div class="heading">
+          <h3 class="name">Scrappy</h3>
+        </div>
+        <div class="body">
+          <p class="address">Scrappy</h3>
+        </div>
+    </div>
     </div>
     <!-- edit pet front end template here-->
     <div id="petTemplate" style="display: none;">
