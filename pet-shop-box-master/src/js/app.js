@@ -132,7 +132,7 @@ web3 = new Web3(App.web3Provider);
       for (i = 0; i < adopters.length; i++) {
         // if pet is not adopted
         if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
-          $('.panel-pet').eq(i).find('.btn-adopt').text('Success').attr('disabled', true);
+          $('.panel-pet').eq(i).find('.btn-adopt').text('Adopted').attr('disabled', true);
         }
       }
     }).catch(function(err) {
@@ -160,7 +160,7 @@ web3 = new Web3(App.web3Provider);
         // Execute adopt as a transaction by sending account
         return adoptionInstance.adopt(petId, {from: account});
       }).then(function(result) {
-        $('.panel-pet').eq(petId).find('.btn-sell').text("sell").attr('disabled', false);
+        $('.panel-pet').eq(petId).find('.btn-sell').text("return").attr('disabled', false);
         return App.markAdopted(account_id);
       }).then(function(result){
         return App.set_sellable(petId, account_id);
@@ -193,13 +193,13 @@ web3 = new Web3(App.web3Provider);
         // if pet is not adopted
         switch(parseInt(selleds[i])) {
           case 0:
-            $('.panel-pet').eq(i).find('.btn-sell').text("cant sell").attr('disabled', true);
+            $('.panel-pet').eq(i).find('.btn-sell').text("can't return").attr('disabled', true);
             break;
           case 1:
             $('.panel-pet').eq(i).find('.btn-sell').attr('disabled', false);
             break;
           case 2:
-            $('.panel-pet').eq(i).find('.btn-sell').text("selled").attr('disabled', true);
+            $('.panel-pet').eq(i).find('.btn-sell').text("returned").attr('disabled', true);
         }
       }
     }).catch(function(err) {

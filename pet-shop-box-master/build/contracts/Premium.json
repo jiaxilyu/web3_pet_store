@@ -47,25 +47,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"buy_premium\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getPremiumStatus\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"use_premium\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/jclkh/Desktop/aps1050/hw7/Homeworkpet-shop-tutorial_WEB3UPDATED_/Homeworkpet-shop-tutorial_WEB3UPDATED/pet-shop-box-master-completed/pet-shop-box-master/contracts/Premium.sol\":\"Premium\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/jclkh/Desktop/aps1050/hw7/Homeworkpet-shop-tutorial_WEB3UPDATED_/Homeworkpet-shop-tutorial_WEB3UPDATED/pet-shop-box-master-completed/pet-shop-box-master/contracts/Premium.sol\":{\"keccak256\":\"0x03cbd62b8334304cc9dfea23b95511564132917499869ebf0973b1564f7554f9\",\"urls\":[\"bzz-raw://2b6be79f5d6346373b760fecc62c9b146819f8e26f297155997f80bb0354365a\",\"dweb:/ipfs/QmXrxN9yQFXV4N9yfSKfTkaK3W91oezYn9LcXboEQkPUzr\"]}},\"version\":1}",
-  "bytecode": "0x60806040526000805534801561001457600080fd5b5060eb806100236000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063673a08101460415780639725be3014605d578063f16967fe146079575b600080fd5b60476095565b6040518082815260200191505060405180910390f35b6063609e565b6040518082815260200191505060405180910390f35b607f60b0565b6040518082815260200191505060405180910390f35b60008054905090565b60006001600081905550600054905090565b6000548156fea265627a7a72315820085756e180fb56d9ee29938a75ac5c1e715e06533fb2e2479262476e3121d8d264736f6c63430005110032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063673a08101460415780639725be3014605d578063f16967fe146079575b600080fd5b60476095565b6040518082815260200191505060405180910390f35b6063609e565b6040518082815260200191505060405180910390f35b607f60b0565b6040518082815260200191505060405180910390f35b60008054905090565b60006001600081905550600054905090565b6000548156fea265627a7a72315820085756e180fb56d9ee29938a75ac5c1e715e06533fb2e2479262476e3121d8d264736f6c63430005110032",
-  "sourceMap": "25:263:2:-;;;69:1;44:26;;25:263;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:263:2;;;;;;;",
-  "deployedSourceMap": "25:263:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:263:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;206:79;;;:::i;:::-;;;;;;;;;;;;;;;;;;;90:88;;;:::i;:::-;;;;;;;;;;;;;;;;;;;44:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;206:79;255:3;271:11;;264:18;;206:79;:::o;90:88::-;129:3;152:1;138:11;:15;;;;164:11;;157:18;;90:88;:::o;44:26::-;;;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"buy_premium\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getPremiumStatus\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"use_premium\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/ruohanchen/Desktop/aps1050/web3_pet_store/pet-shop-box-master/contracts/Premium.sol\":\"Premium\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ruohanchen/Desktop/aps1050/web3_pet_store/pet-shop-box-master/contracts/Premium.sol\":{\"keccak256\":\"0x03cbd62b8334304cc9dfea23b95511564132917499869ebf0973b1564f7554f9\",\"urls\":[\"bzz-raw://2b6be79f5d6346373b760fecc62c9b146819f8e26f297155997f80bb0354365a\",\"dweb:/ipfs/QmXrxN9yQFXV4N9yfSKfTkaK3W91oezYn9LcXboEQkPUzr\"]}},\"version\":1}",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b5060eb806100236000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063673a08101460415780639725be3014605d578063f16967fe146079575b600080fd5b60476095565b6040518082815260200191505060405180910390f35b6063609e565b6040518082815260200191505060405180910390f35b607f60b0565b6040518082815260200191505060405180910390f35b60008054905090565b60006001600081905550600054905090565b6000548156fea265627a7a723158209aa2a40199b4257314a5f7734e42535aeea26258ae1715fa69056dfe77f90b7464736f6c63430005110032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063673a08101460415780639725be3014605d578063f16967fe146079575b600080fd5b60476095565b6040518082815260200191505060405180910390f35b6063609e565b6040518082815260200191505060405180910390f35b607f60b0565b6040518082815260200191505060405180910390f35b60008054905090565b60006001600081905550600054905090565b6000548156fea265627a7a723158209aa2a40199b4257314a5f7734e42535aeea26258ae1715fa69056dfe77f90b7464736f6c63430005110032",
+  "sourceMap": "25:263:3:-;;;69:1;44:26;;25:263;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:263:3;;;;;;;",
+  "deployedSourceMap": "25:263:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:263:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;206:79;;;:::i;:::-;;;;;;;;;;;;;;;;;;;90:88;;;:::i;:::-;;;;;;;;;;;;;;;;;;;44:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;206:79;255:3;271:11;;264:18;;206:79;:::o;90:88::-;129:3;152:1;138:11;:15;;;;164:11;;157:18;;90:88;:::o;44:26::-;;;;:::o",
   "source": "pragma solidity ^0.5.0;\n\ncontract Premium {\nint public use_premium = 0;\n// Adopting a pet\nfunction buy_premium() public returns (int) {\n  use_premium = 1;\n  return use_premium;\n}\n// Retrieving the adopters\nfunction getPremiumStatus() public view returns (int) {\n  return use_premium;\n}\n\n}",
-  "sourcePath": "/Users/jclkh/Desktop/aps1050/hw7/Homeworkpet-shop-tutorial_WEB3UPDATED_/Homeworkpet-shop-tutorial_WEB3UPDATED/pet-shop-box-master-completed/pet-shop-box-master/contracts/Premium.sol",
+  "sourcePath": "/Users/ruohanchen/Desktop/aps1050/web3_pet_store/pet-shop-box-master/contracts/Premium.sol",
   "ast": {
-    "absolutePath": "/Users/jclkh/Desktop/aps1050/hw7/Homeworkpet-shop-tutorial_WEB3UPDATED_/Homeworkpet-shop-tutorial_WEB3UPDATED/pet-shop-box-master-completed/pet-shop-box-master/contracts/Premium.sol",
+    "absolutePath": "/Users/ruohanchen/Desktop/aps1050/web3_pet_store/pet-shop-box-master/contracts/Premium.sol",
     "exportedSymbols": {
       "Premium": [
-        126
+        194
       ]
     },
-    "id": 127,
+    "id": 195,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 102,
+        "id": 170,
         "literals": [
           "solidity",
           "^",
@@ -73,7 +73,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:2"
+        "src": "0:23:3"
       },
       {
         "baseContracts": [],
@@ -81,20 +81,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 126,
+        "id": 194,
         "linearizedBaseContracts": [
-          126
+          194
         ],
         "name": "Premium",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 105,
+            "id": 173,
             "name": "use_premium",
             "nodeType": "VariableDeclaration",
-            "scope": 126,
-            "src": "44:26:2",
+            "scope": 194,
+            "src": "44:26:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -102,10 +102,10 @@
               "typeString": "int256"
             },
             "typeName": {
-              "id": 103,
+              "id": 171,
               "name": "int",
               "nodeType": "ElementaryTypeName",
-              "src": "44:3:2",
+              "src": "44:3:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_int256",
                 "typeString": "int256"
@@ -114,14 +114,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30",
-              "id": 104,
+              "id": 172,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "69:1:2",
+              "src": "69:1:3",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -133,26 +133,26 @@
           },
           {
             "body": {
-              "id": 116,
+              "id": 184,
               "nodeType": "Block",
-              "src": "134:44:2",
+              "src": "134:44:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 112,
+                    "id": 180,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 110,
+                      "id": 178,
                       "name": "use_premium",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 105,
-                      "src": "138:11:2",
+                      "referencedDeclaration": 173,
+                      "src": "138:11:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
                         "typeString": "int256"
@@ -163,14 +163,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 111,
+                      "id": 179,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "152:1:2",
+                      "src": "152:1:3",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1_by_1",
@@ -178,61 +178,61 @@
                       },
                       "value": "1"
                     },
-                    "src": "138:15:2",
+                    "src": "138:15:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "id": 113,
+                  "id": 181,
                   "nodeType": "ExpressionStatement",
-                  "src": "138:15:2"
+                  "src": "138:15:3"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 114,
+                    "id": 182,
                     "name": "use_premium",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 105,
-                    "src": "164:11:2",
+                    "referencedDeclaration": 173,
+                    "src": "164:11:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 109,
-                  "id": 115,
+                  "functionReturnParameters": 177,
+                  "id": 183,
                   "nodeType": "Return",
-                  "src": "157:18:2"
+                  "src": "157:18:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 117,
+            "id": 185,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "buy_premium",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 106,
+              "id": 174,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "110:2:2"
+              "src": "110:2:3"
             },
             "returnParameters": {
-              "id": 109,
+              "id": 177,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 108,
+                  "id": 176,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 117,
-                  "src": "129:3:2",
+                  "scope": 185,
+                  "src": "129:3:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -240,10 +240,10 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 107,
+                    "id": 175,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
-                    "src": "129:3:2",
+                    "src": "129:3:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -253,65 +253,65 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "128:5:2"
+              "src": "128:5:3"
             },
-            "scope": 126,
-            "src": "90:88:2",
+            "scope": 194,
+            "src": "90:88:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 124,
+              "id": 192,
               "nodeType": "Block",
-              "src": "260:25:2",
+              "src": "260:25:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 122,
+                    "id": 190,
                     "name": "use_premium",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 105,
-                    "src": "271:11:2",
+                    "referencedDeclaration": 173,
+                    "src": "271:11:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 121,
-                  "id": 123,
+                  "functionReturnParameters": 189,
+                  "id": 191,
                   "nodeType": "Return",
-                  "src": "264:18:2"
+                  "src": "264:18:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 125,
+            "id": 193,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getPremiumStatus",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 118,
+              "id": 186,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "231:2:2"
+              "src": "231:2:3"
             },
             "returnParameters": {
-              "id": 121,
+              "id": 189,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 120,
+                  "id": 188,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 125,
-                  "src": "255:3:2",
+                  "scope": 193,
+                  "src": "255:3:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -319,10 +319,10 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 119,
+                    "id": 187,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
-                    "src": "255:3:2",
+                    "src": "255:3:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -332,33 +332,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "254:5:2"
+              "src": "254:5:3"
             },
-            "scope": 126,
-            "src": "206:79:2",
+            "scope": 194,
+            "src": "206:79:3",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 127,
-        "src": "25:263:2"
+        "scope": 195,
+        "src": "25:263:3"
       }
     ],
-    "src": "0:288:2"
+    "src": "0:288:3"
   },
   "legacyAST": {
-    "absolutePath": "/Users/jclkh/Desktop/aps1050/hw7/Homeworkpet-shop-tutorial_WEB3UPDATED_/Homeworkpet-shop-tutorial_WEB3UPDATED/pet-shop-box-master-completed/pet-shop-box-master/contracts/Premium.sol",
+    "absolutePath": "/Users/ruohanchen/Desktop/aps1050/web3_pet_store/pet-shop-box-master/contracts/Premium.sol",
     "exportedSymbols": {
       "Premium": [
-        126
+        194
       ]
     },
-    "id": 127,
+    "id": 195,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 102,
+        "id": 170,
         "literals": [
           "solidity",
           "^",
@@ -366,7 +366,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:2"
+        "src": "0:23:3"
       },
       {
         "baseContracts": [],
@@ -374,20 +374,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 126,
+        "id": 194,
         "linearizedBaseContracts": [
-          126
+          194
         ],
         "name": "Premium",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 105,
+            "id": 173,
             "name": "use_premium",
             "nodeType": "VariableDeclaration",
-            "scope": 126,
-            "src": "44:26:2",
+            "scope": 194,
+            "src": "44:26:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -395,10 +395,10 @@
               "typeString": "int256"
             },
             "typeName": {
-              "id": 103,
+              "id": 171,
               "name": "int",
               "nodeType": "ElementaryTypeName",
-              "src": "44:3:2",
+              "src": "44:3:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_int256",
                 "typeString": "int256"
@@ -407,14 +407,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30",
-              "id": 104,
+              "id": 172,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "69:1:2",
+              "src": "69:1:3",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -426,26 +426,26 @@
           },
           {
             "body": {
-              "id": 116,
+              "id": 184,
               "nodeType": "Block",
-              "src": "134:44:2",
+              "src": "134:44:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 112,
+                    "id": 180,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 110,
+                      "id": 178,
                       "name": "use_premium",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 105,
-                      "src": "138:11:2",
+                      "referencedDeclaration": 173,
+                      "src": "138:11:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
                         "typeString": "int256"
@@ -456,14 +456,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 111,
+                      "id": 179,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "152:1:2",
+                      "src": "152:1:3",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1_by_1",
@@ -471,61 +471,61 @@
                       },
                       "value": "1"
                     },
-                    "src": "138:15:2",
+                    "src": "138:15:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "id": 113,
+                  "id": 181,
                   "nodeType": "ExpressionStatement",
-                  "src": "138:15:2"
+                  "src": "138:15:3"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 114,
+                    "id": 182,
                     "name": "use_premium",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 105,
-                    "src": "164:11:2",
+                    "referencedDeclaration": 173,
+                    "src": "164:11:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 109,
-                  "id": 115,
+                  "functionReturnParameters": 177,
+                  "id": 183,
                   "nodeType": "Return",
-                  "src": "157:18:2"
+                  "src": "157:18:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 117,
+            "id": 185,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "buy_premium",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 106,
+              "id": 174,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "110:2:2"
+              "src": "110:2:3"
             },
             "returnParameters": {
-              "id": 109,
+              "id": 177,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 108,
+                  "id": 176,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 117,
-                  "src": "129:3:2",
+                  "scope": 185,
+                  "src": "129:3:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -533,10 +533,10 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 107,
+                    "id": 175,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
-                    "src": "129:3:2",
+                    "src": "129:3:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -546,65 +546,65 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "128:5:2"
+              "src": "128:5:3"
             },
-            "scope": 126,
-            "src": "90:88:2",
+            "scope": 194,
+            "src": "90:88:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 124,
+              "id": 192,
               "nodeType": "Block",
-              "src": "260:25:2",
+              "src": "260:25:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 122,
+                    "id": 190,
                     "name": "use_premium",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 105,
-                    "src": "271:11:2",
+                    "referencedDeclaration": 173,
+                    "src": "271:11:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 121,
-                  "id": 123,
+                  "functionReturnParameters": 189,
+                  "id": 191,
                   "nodeType": "Return",
-                  "src": "264:18:2"
+                  "src": "264:18:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 125,
+            "id": 193,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getPremiumStatus",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 118,
+              "id": 186,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "231:2:2"
+              "src": "231:2:3"
             },
             "returnParameters": {
-              "id": 121,
+              "id": 189,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 120,
+                  "id": 188,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 125,
-                  "src": "255:3:2",
+                  "scope": 193,
+                  "src": "255:3:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -612,10 +612,10 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 119,
+                    "id": 187,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
-                    "src": "255:3:2",
+                    "src": "255:3:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -625,20 +625,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "254:5:2"
+              "src": "254:5:3"
             },
-            "scope": 126,
-            "src": "206:79:2",
+            "scope": 194,
+            "src": "206:79:3",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 127,
-        "src": "25:263:2"
+        "scope": 195,
+        "src": "25:263:3"
       }
     ],
-    "src": "0:288:2"
+    "src": "0:288:3"
   },
   "compiler": {
     "name": "solc",
@@ -648,12 +648,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xee1711AD65d1e392F2dcf90413AcdD070f3bbd62",
-      "transactionHash": "0x5b5b33c7093c083e093d0f8ecb666433c4e7dbb42c71fc28047ae1d9ad07202d"
+      "address": "0x1687e5efE510F3C66b30B46D750dfDDcD751EF53",
+      "transactionHash": "0x4b7df0ab86869892c929480396a5d363d64d4377fb55d0b5c4e76ccb4e9f25b4"
     }
   },
   "schemaVersion": "3.0.22",
-  "updatedAt": "2022-12-17T05:32:30.565Z",
+  "updatedAt": "2022-12-19T10:34:53.682Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
