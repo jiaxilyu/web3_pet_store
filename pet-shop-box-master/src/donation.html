@@ -92,7 +92,7 @@
 				<div class="col-lg-8">
 					<div class="contact-form-wrap">
 						<div class="contact-form-box">
-							<h2>Thanks to our doners:</h2>
+							<h2>Thanks to our donors:</h2>
               <div  id="donerList"></div>
 						</div>
 					</div>
@@ -100,8 +100,43 @@
 			</div>
 		</div>
 	</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <div class="section-title">
+          <h3><span class="red-text">Proposal</span></h3>
+          <p>If you are a donor, please give us your advice on how we spend the money!</p>
+        </div>
+      </div>
+      <div class="col">
+        <form id='add friend' action="" method="get">
+          <div class="form-group"  style="width: 100%">
+            <p>
+              <input type="text" placeholder="Description" name="description" id="proposal-description">
+            </p>
+            <p>
+              <input type="number" placeholder="Target amount" name="amount" id="proposal-amount">
+            </p>
+            <button class="btn btn-primary flex-fill me-1 proposal-button" type="button">propose!</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- <div class="col-lg-8">
+        <div class="contact-form-box">
+          <h2>Our received proposals</h2>
+          <div  id="proposalList"></div>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+  
+  
     
     <h3 id="donerTemplate" style="display:none;"><span class="doner-name">Fake User</span> donated <span class="doner-amount">?</span> Ether!</h3>
+    <h3 id="proposalTemplate" style="display:none;"><span class="proposal-description"></span> <span class="proposal-amount"></span>Ether</h3>
 
     </style>
     <!-- <button class="premium" -->

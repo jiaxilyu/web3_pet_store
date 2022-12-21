@@ -1831,12 +1831,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xE153905019f86E118D17C3972b367faBbc19FEA9",
-      "transactionHash": "0x905027a43a181573f2af0033a92bc8e4fd0b154d406ac273b534b40e8bab0199"
+      "address": "0x0BB7f21f6D675b8C2AcF1d1F0D8d9452d1DfcA48",
+      "transactionHash": "0xb5afcca99d6f6ced304a95c253571a2c9bca9c0e32aadfad7150db98cbcbdc71"
     }
   },
   "schemaVersion": "3.0.22",
-  "updatedAt": "2022-12-19T10:34:53.683Z",
+  "updatedAt": "2022-12-21T07:26:10.548Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

@@ -41,6 +41,7 @@ App = {
         App.contracts.Donation.setProvider(App.web3Provider);
         App.getCurrentDonation();
         App.getContributors();
+        App.getProposal();
       });
       
       // App.updatedView();
@@ -50,6 +51,8 @@ App = {
     // bind all click event on botton
     bindEvents: function() {
         $(document).on('click', '.donate-button', App.handlemakeDonation);
+        $(document).on('click', '.proposal-button', App.handlecreateProposal);
+
     },
 
     // update view
@@ -59,6 +62,7 @@ App = {
         // App.markAdopted();
         App.getCurrentDonation();
         App.getContributors();
+        App.getProposal();
       }
       catch(err){
         console.log(err);
@@ -137,66 +141,65 @@ App = {
 
     },
 
-    createProposal: function(event) {
-        var donationInstance;
-
-    },
-
-    getVoter: function(index) {
-        var donationInstance;
-
-    },
-
-
-    // deal with adopted bottons
-    markAdopted: function(account) {
-      var adoptionInstance;
-      App.contracts.Adoption.deployed().then(function(instance) {
-        adoptionInstance = instance;
-        //get all adopters of all pets
-        return adoptionInstance.getAdopters.call();
-      }).then(function(adopters) {
-        // refresh the page
-        for (i = 0; i < adopters.length; i++) {
-          // if pet is not adopted
-          if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
-            $('.panel-pet').eq(i).find('.btn-adopt').text('Adopted').attr('disabled', true);
-          }
+    handlecreateProposal:function(event){
+        event.preventDefault();
+        var description = document.getElementById("proposal-description").value;
+        var amount = document.getElementById("proposal-amount").value;
+        if (amount > 0){
+          return App.createProposal(description, amount);
         }
-      }).catch(function(err) {
-        console.log(err.message);
-      });
-    },
-  
-    // deal with adopted action
-    handleAdopt: function(event) {
-      event.preventDefault();
-  
-      let petId = parseInt($(event.target).data('id'));
-      var adoptionInstance;
-  
-      web3.eth.getAccounts(function(error, accounts) {
-        if (error) {
-          console.log(error);
+        else {
+          window.alert(`Please make proposal with target amount greater than 0!`);
         }
-      
-        let account = accounts[0];
-        let account_id = accounts[0];
-        App.contracts.Adoption.deployed().then(function(instance) {
-          adoptionInstance = instance;
-          
-          // Execute adopt as a transaction by sending account
-          return adoptionInstance.adopt(petId, {from: account});
-        }).then(function(result) {
-          $('.panel-pet').eq(petId).find('.btn-sell').text("sell").attr('disabled', false);
-          return App.markAdopted(account_id);
-        }).then(function(result){
-          return App.set_sellable(petId, account_id);
-        }).catch(function(err) {
-          console.log(err.message);
-        });
-      });
-    }
+      },
+
+    createProposal: function(description, amount) {
+        var donationInstance;
+        web3.eth.getAccounts(function(error, accounts) {
+            if (error) {
+              console.log(error);
+            }
+            console.log(description, amount);
+            App.contracts.Donation.deployed().then(function(instance) {
+              donationInstance = instance;
+              let account = accounts[0];
+              return donationInstance.createProposal(description, parseInt(amount), {from: account});
+            }).then(function(result){
+              location.reload();
+              // App.getContributors();
+            }).catch(function(err){
+              console.log(err);
+            });
+          });
+
+    },
+
+    // getProposal: function(index) {
+    //     var donationInstance;
+    //     App.contracts.Donation.deployed().then(function(instance) {
+    //         donationInstance = instance;
+    //         return donationInstance.getProposal();
+    //     }).then(function(ret) {
+    //         descriptionList = ret[0];
+    //         amountList = ret[1];
+    //         recipientList = ret[2];
+    //         completeList = ret[3];
+    //         var proposalCol = $('#proposalCol');
+    //         var proposalTemplate = $('#proposalTemplate');
+    //         for(i=0; i < descriptionList.length; ++i){
+    //             if (completeList[i] == false) {
+    //                 // console.log(doner_names[i]);
+    //                 proposalTemplate.find(".proposal-description").text(web3.toAscii(descriptionList[i]));
+    //                 // donerTemplate.find(".doner-name").text(doner_names[i]);
+    //                 proposalTemplate.find(".proposal-amount").text(amountList[i]);
+    //                 proposalCol.append(donerTemplate.html());
+    //             }
+    //         }
+    //       }).catch(function(err) {
+    //         console.log(err.message);
+    //     });
+    // },
+
   };
   
   $(function() {
